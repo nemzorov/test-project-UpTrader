@@ -1,0 +1,18 @@
+@import './../vars.scss';
+
+.menu {
+    $width: 300px;
+    width: $width;
+    height: 100%;
+    background: $backgroundDark;
+    display: flex;
+    position: relative;
+    left: -$width;
+    padding: 0 $gapY;
+    border-right: 1px solid $coloBorder;
+
+    &__active {
+        left: 0;
+        transition: $transition;
+    }
+}

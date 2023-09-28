@@ -1,0 +1,34 @@
+// breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// container width
+$containerWidthSm: 576px;
+$containerWidthMd: 768px;
+$containerWidthLg: 992px;
+$containerWidthXl: 1200px;
+$containerWidthXxl: 1400px;
+
+$breakpoints: (
+    (sm, $sm, $containerWidthSm),
+    (md, $md, $containerWidthMd),
+    (lg, $lg, $containerWidthLg),
+    (xl, $xl, $containerWidthXl),
+    (xxl, $xxl, $containerWidthXxl),
+);
+
+// layout
+$gapX: 1rem;
+$gapY: 1rem;
+$columns: 2;
+$background: #23272E;
+$backgroundDark: #191B1D;
+$backgroundBlack: #141517;
+$color: #E6E6E6;
+$colorMuted: #938B74;
+$colorPrimary: #1536A1;
+$coloBorder: #353539;
+$transition: 0.25s;

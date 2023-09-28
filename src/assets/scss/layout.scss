@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    padding: 0 $gapX;
+    margin: 0 auto;
+}
+
+@each $name, $breakpoint, $width in $breakpoints {
+    @media (min-width: $breakpoint) {
+        .container {
+            max-width: $width;
+        }
+    }
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: $gapY;
+    column-gap: $gapX;
+
+    &>* {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc((100% / $columns) - ($gapX * ($columns - 1)) / $columns);
+    }
+}

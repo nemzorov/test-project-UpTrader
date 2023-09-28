@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1920px;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+body>footer {
+    margin-top: auto;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    font: inherit;
+    min-width: 0;
+    /* для FF */
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    appearance: none;
+    white-space: normal;
+}
+
+label,
+button,
+.button,
+[role=button] {
+    user-select: none;
+    cursor: pointer;
+}
+
+img,
+svg {
+    flex: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+img {
+    object-fit: cover;
+}
+
+svg {
+    fill: currentColor;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a[href^="tel:"] {
+    white-space: nowrap;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+[hidden] {
+    display: none;
+}
